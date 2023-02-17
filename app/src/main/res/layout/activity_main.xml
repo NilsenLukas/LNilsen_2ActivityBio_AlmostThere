@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your bio!"
+            android:textSize="24sp" />
+
+        <TableLayout
+            android:id="@+id/bio_table"
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:stretchColumns="0">
+
+            <TableRow>
+                <TextView
+                    android:text="First name"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Last name"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="School"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Year of graduation"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Degree"
+                    android:padding="5dp"/>
+                <EditText
+                    android:id="@+id/degree_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+                        <CheckBox
+                            android:text="B.S."
+                            android:padding="5dp"/>
+                        <CheckBox
+                            android:text="M.S."
+                            android:padding="5dp"/>
+                        <CheckBox
+                            android:text="BFA"
+                            android:padding="5dp"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <CheckBox
+                            android:text="MS"
+                            android:padding="5dp"/>
+                        <CheckBox
+                            android:text="MA"
+                            android:padding="5dp"/>
+                        <CheckBox
+                            android:text="MFA"
+                            android:padding="5dp"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <CheckBox
+                            android:text="PhD"
+                            android:padding="5dp"/>
+                        <CheckBox
+                            android:text="EdD"
+                            android:padding="5dp"/>
+                        <CheckBox
+                            android:text="MD"
+                            android:padding="5dp"/>
+                    </TableRow>
+
+                </TableLayout>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Major"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Favorite activities"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/create_button"
+            android:text="Create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="16dp"
+            android:onClick="createBio"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BioActivity">
+
+        <TextView
+            android:id="@+id/bio_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
